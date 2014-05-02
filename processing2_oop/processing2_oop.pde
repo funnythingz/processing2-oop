@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-Layout layout;
+Layout layout = new Layout();
 
 void setup() {
   int rectLength = 100;
   
-  layout = new Layout();
   layout.ready(rectLength);
 }
 
