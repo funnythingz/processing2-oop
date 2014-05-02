@@ -11,7 +11,7 @@ void setup() {
 }
 
 void draw() {
-  layout.display(); 
+  layout.display();
 }
 
 class Layout {
