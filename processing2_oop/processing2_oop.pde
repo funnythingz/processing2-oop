@@ -22,12 +22,12 @@ class Layout {
   
   public void ready(int rectLength) {
     this.rectLength = rectLength;
-    background(255, 255, 255);
+    background(0, 0, 0);
     size(480, 320);
   }
   
   public void display() {
-    background(255, 255, 255);
+    background(0, 0, 0);
     
     this.graphicsFactory = new GraphicsFactory();
                                                                             
@@ -51,7 +51,7 @@ class GraphicsFactory {
   public Position position;
   
   Rect createRect() {
-    return new Rect(new Background(random(128, 255), random(128, 255), random(128, 255)),
+    return new Rect(new Background(random(255), random(255), random(255)),
                     new Size(50, 50),
                     new Position(random(480), random(320)));
   }
@@ -61,7 +61,7 @@ class GraphicsFactory {
     ArrayList<Rect> rects = new ArrayList<Rect>();
     
     for(int i = 0; i < num; i++) {
-      rects.add(new Rect(new Background(random(128, 255), random(128, 255), random(128, 255)),
+      rects.add(new Rect(new Background(random(255), random(255), random(255)),
                          new Size(random(30, 50), random(30, 50)),
                          new Position(random(480), random(320))));
     }
@@ -71,7 +71,7 @@ class GraphicsFactory {
   }
   
   Ellipse createEllipse() {
-    return new Ellipse(new Background(random(128, 255), random(128, 255), random(128, 255)),
+    return new Ellipse(new Background(random(255), random(255), random(255)),
                        new Size(random(10, 200), random(10, 200)),
                        new Position((width/2), (height/2)));
   }
