@@ -99,19 +99,13 @@ abstract class Graphic {
   
 }
 
-class Rect {
-  
-  public Background background;
-  public Size size;
-  public Position position;
-  
+class Rect extends Graphic {
+
   Rect(Background background,
        Size size,
        Position position) {
          
-    this.background = background;
-    this.size = size;
-    this.position = position;
+    super(background, size, position);
   }
   
   public void show() {
@@ -129,19 +123,13 @@ class Rect {
   
 }
 
-class Ellipse {
-  
-  public Background background;
-  public Size size;
-  public Position position;
-  
+class Ellipse extends Graphic {
+
   Ellipse(Background background,
-       Size size,
-       Position position) {
+          Size size,
+          Position position) {
          
-    this.background = background;
-    this.size = size;
-    this.position = position;
+    super(background, size, position);
   }
   
   public void show() {
